@@ -1,0 +1,202 @@
+/* 1 PC */
+@media screen and (min-width: 992px) {
+    .mobile__header{
+        display: none;
+    }
+    .show__on--mobile{
+        display: none;
+    }
+}
+/* Tablet and mobie*/
+@media screen and (max-width: 991px) {
+    .navbar{
+        position: relative;
+    }
+    .logo__header{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .navbar ul{
+        display: none;
+    }
+    .toggle-menu svg{
+        width: 24px;
+        
+    }
+    .menu__overlay{
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s ease;
+    }
+    .menu__drawer{
+        position: fixed;
+        inset: 0 40% 0 0;
+        background: #fff;
+        z-index: 2;
+        transform: translateX(-100%);
+        transition: 0.5s ease;
+        padding: 60px;
+    }
+    .menu__checkbox:checked ~ .menu__overlay{
+        opacity: 1;
+        visibility: visible;
+    }
+    .menu__checkbox:checked ~ .menu__drawer{
+        transform: translateX(0%);
+    }
+    .menu__drawer ul{
+        margin-top: 32px;
+    }
+    .menu__drawer ul a{
+        display: block;
+        color: #333;
+        padding: 14px 0px;
+        font-weight: 500;
+    }
+    .hero-img{
+        display: none;
+    }
+    .hero-wrap .info{
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .hero-wrap .desc{
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    .client .row-img{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .guide-item {
+        margin: 0;
+        flex-grow: 1;
+
+    }
+    .featured .list{
+        grid-template-columns: 1fr 1fr;
+    }
+    .row__stats{
+        flex-direction: column;
+    }
+    .stats .img-block, .stats .info{
+        width: 100%;
+    }
+    .stats .img-block{
+        order: 2;
+        margin-top: 25px;
+    }
+    .stats .info{
+
+        padding: 0;
+        order: 1;
+    }
+    .stats .sub-title {
+        width: 70%;
+    }
+    .stats .row-qty{
+        padding: 0;
+    }
+    .subscription .image{
+        right: 15px;
+    }
+    .subscription .info{
+        width: 60%;
+        padding-right: 0;
+    }
+    
+}
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .show__on--mobile{
+        display: none;
+    }
+}
+/* Mobile */
+@media screen and (max-width: 767px) {
+    .menu__drawer{
+        inset: 0 25% 0 0;
+        padding: 32px;
+    }
+    .navbar .action-link{
+        display: none;
+    }
+    .featured .list{
+        grid-template-columns: 1fr;
+    }
+    .list-guide{
+        flex-direction: column;
+    }
+    .guide-item + .guide-item{
+        margin-top: 20px;
+    }
+    .stats .sub-title{
+        width: 100%;
+    }
+    .stats .img-block .image{
+        width: 100%;
+    }
+    .stats-trend{
+        top: -15px;
+        left: -15px;
+    }
+    .stats .row-qty{
+        flex-direction: column;
+        text-align: center;
+    }
+    .qty-item + .qty-item {
+        margin-top: 20px;
+    }
+    .subscription .image {
+        display: none;
+    }
+    .subscription .info{
+        width: 100%;
+        padding: 0;  
+        text-align: center;    
+    }
+    .footer .row{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+    }
+    .footer .desc{
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    .footer .column{
+        /* margin-left: 25px; */
+        text-align: center;
+    }
+    .hiden-on-mobile{
+        display: none;
+    }
+    .icon__on-moblile{
+        margin-left: -6px;
+    }
+    .featured .row .link{
+        display: none;
+    }
+    .hidden__on--monlie{
+        display: none;
+    }
+    .featured .show__on--mobile{
+        color: #0689FF;
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+    .featured .row .desc{
+        margin-top: 15px;
+    }
+
+}
